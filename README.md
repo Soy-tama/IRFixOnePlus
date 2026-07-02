@@ -43,7 +43,7 @@ The following missing framework APIs were patched out and replaced with safe stu
 - **Three dot menu (⋮) does nothing** — the overflow menu relies on COUI UI components that depend on missing framework APIs. Core IR functionality is unaffected.
 - **Shadow effects disabled** — `OplusView` shadow geometry is not applied. Purely cosmetic.
 - **Smooth rounded corners** — COUI components fall back to standard Android rounded corners instead of OnePlus's squircle variant. Visually very similar.
-
+- **Renaming Added Appliances** — Since the three dot menu doesnt work the added appliances cant be renamed once added.
 ## Functionality
 
 Everything that matters works:
@@ -57,7 +57,7 @@ Everything that matters works:
 ## Requirements
 
 - OnePlus device with IR blaster
-- Custom ROM based on [android_device_oneplus_ziti](https://github.com/pjgowtham/android_device_oneplus_ziti)
+- Custom ROM
 - Android 14 or later
 
 ## Installation
