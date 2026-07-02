@@ -48,11 +48,11 @@ The following missing framework APIs were patched out and replaced with safe stu
 
 Everything that matters works:
 
-- ✅ App launches
-- ✅ Add new IR device
-- ✅ Browse device brands and models
-- ✅ IR signal transmission (tested with AC)
-- ✅ Device control panel
+-  App launches
+-  Add new IR device
+-  Browse device brands and models
+-  IR signal transmission (tested with AC)
+-  Device control panel
 
 ## Requirements
 
