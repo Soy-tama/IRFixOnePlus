@@ -70,7 +70,7 @@ Everything that matters works:
 
 2. Install the patched APK:
    ```
-   adb install IR-Remote-patched.apk
+   adb install patched_old_signed.apk
    ```
    Or sideload via a file manager.
 
@@ -81,7 +81,7 @@ Everything that matters works:
 The APK was decompiled using [apktool](https://apktool.org), the missing framework calls identified via `adb logcat` crash analysis, stubbed out at the smali bytecode level, then rebuilt and signed with a debug keystore.
 
 If a future ROM update breaks the app again, follow the same process:
-1. `apktool d IR-Remote.apk -o ir`
+1. `apktool d patched_old_signed.apk -o ir` or get the files from oldfix.7z
 2. Capture `adb logcat` crash output
 3. Find the offending smali file via `Get-ChildItem -Recurse -Filter "*.smali" | Select-String "MissingClass"`
 4. Replace `new-instance` / `invoke-static` / `sget` calls on missing classes with constants or no-ops
